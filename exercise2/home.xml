@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Instagram"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:id="@+id/notif"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/hart"
+        app:layout_constraintTop_toTopOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <ImageView
+        android:id="@+id/messages"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/mess"
+        app:layout_constraintTop_toTopOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="56dp"/>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/icon"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Username"
+        app:layout_constraintStart_toEndOf="@id/icon"
+        app:layout_constraintTop_toTopOf="@id/icon" />
+
+    <ImageView
+        android:id="@+id/option"
+        android:layout_width="45dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/icon"
+        app:srcCompat="@drawable/dot" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="400dp"
+        android:layout_height="310dp"
+        app:srcCompat="@drawable/content"
+        app:layout_constraintTop_toBottomOf="@id/icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/hart1"
+        app:layout_constraintTop_toBottomOf="@id/imageView17"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:id="@+id/comment"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/komint"
+        app:layout_constraintTop_toTopOf="@id/like"
+        app:layout_constraintStart_toEndOf="@id/like"
+        android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/share"
+        app:layout_constraintTop_toTopOf="@id/like"
+        app:layout_constraintStart_toEndOf="@id/comment"
+        android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/save"
+        app:layout_constraintTop_toTopOf="@id/like"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1007 likes"
+        app:layout_constraintTop_toBottomOf="@id/like"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/likes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="example caption"
+        app:layout_constraintTop_toBottomOf="@id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#test #test #test"
+        android:textColor="#3E40E2"
+        app:layout_constraintTop_toBottomOf="@id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"/>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        app:backgroundTint="#FFFDFD"
+        app:fabAnchorMode="embed"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- Bottom Icons (Home, Search, Reels, Add, Profile) -->
+    <ImageView
+        android:id="@+id/home1"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/bottomAppBar"
+        android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/search"
+        app:layout_constraintStart_toEndOf="@id/home1"
+        app:layout_constraintBottom_toBottomOf="@id/bottomAppBar"
+        android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:id="@+id/reels"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/reel"
+        app:layout_constraintStart_toEndOf="@id/search"
+        app:layout_constraintBottom_toBottomOf="@id/bottomAppBar"
+        android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/add"
+        app:layout_constraintStart_toEndOf="@id/reels"
+        app:layout_constraintBottom_toBottomOf="@id/bottomAppBar"
+        android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/prof"
+        app:layout_constraintStart_toEndOf="@id/add"
+        app:layout_constraintBottom_toBottomOf="@id/bottomAppBar"
+        android:layout_marginStart="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
